@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Wait 120 seconds for SQL Server to start up by ensuring that 
-# calling SQLCMD does not return an error code, which will ensure that sqlcmd is accessible
-# and that system and user databases return "0" which means all databases are in an "online" state
-# https://docs.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-databases-transact-sql?view=sql-server-2017 
-
 ERRCODE=1
 start_time="$(date -u +%s)"
 end_time="$(date -u +%s)"
